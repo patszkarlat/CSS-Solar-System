@@ -25,6 +25,11 @@ html, body {
   top: 25%;
   left: 25%;
 
+  height: 50px;
+  width: 50px;
+  margin-left: -25px;
+  margin-right: -25px;
+
   border-color: green;
   border-width: 2px;
   border-style: solid;
@@ -33,5 +38,17 @@ html, body {
 
 #earth-orbit {
 
-
+	position: absolute;
+  top: 50%;
+  left: 50%;
+    
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -250px;
+    
+  border-width: 2px;
+  border-style: dotted;
+  border-color: white;
+  border-radius: 50%;
 }
