@@ -12,10 +12,6 @@ html, body {
 	width: 200px;
 	margin-top: -100px;
 	margin-left: -100px;
-
-	border-color: orange;
-  border-width: 6px;
-  border-style: solid;
   border-radius: 50%;
   box-shadow: 0 0 128px red;
 }
@@ -29,15 +25,11 @@ html, body {
   width: 50px;
   margin-left: -25px;
   margin-right: -25px;
-
-  border-color: green;
-  border-width: 2px;
-  border-style: solid;
   border-radius: 50%;
+  box-shadow: 0 0 30px green;
 }
 
 #earth-orbit {
-
 	position: absolute;
   top: 50%;
   left: 50%;
@@ -51,4 +43,30 @@ html, body {
   border-style: dotted;
   border-color: white;
   border-radius: 50%;
+
+ -webkit-animation: spin-right 10s linear infinite;
+  -moz-animation: spin-right 10s linear infinite;
+   -ms-animation: spin-right 10s linear infinite;
+    -o-animation: spin-right 10s linear infinite;
+     animation: spin-right 10s linear infinite;
 }
+
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
